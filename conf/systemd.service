@@ -6,7 +6,7 @@ After=local-fs.target network.target
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=/usr/bin/java -Djava.net.preferIPv4Stack=true -server -jar commafeed.jar server config.yml
+ExecStart=__INSTALL_DIR__/commafeed
 SyslogIdentifier=commafeed
 Restart=always
 
