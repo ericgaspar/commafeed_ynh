@@ -1,1 +1,1 @@
-Ceci est une fausse description des fonctionalités de l'app
+Lecteur RSS auto-hébergé inspiré de Google Reader, basé sur Quarkus et React/TypeScript.

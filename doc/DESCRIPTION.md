@@ -1,1 +1,1 @@
-This is a dummy description of this app features
+Google Reader inspired self-hosted RSS reader, based on Quarkus and React/TypeScript.
