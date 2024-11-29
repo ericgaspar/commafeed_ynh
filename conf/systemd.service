@@ -1,15 +1,18 @@
 [Unit]
-Description=Small description of the service
-After=network.target
+Description=A bloat-free feed reader
+After=local-fs.target network.target
 
 [Service]
-Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/script
-StandardOutput=append:/var/log/__APP__/__APP__.log
-StandardError=inherit
+ExecStart=/usr/bin/java -Djava.net.preferIPv4Stack=true -server -jar commafeed.jar server config.yml
+SyslogIdentifier=commafeed
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
 
 ### Depending on specificities of your service/app, you may need to tweak these
 ### .. but this should be a good baseline
