@@ -15,7 +15,6 @@ maintainers = []
 license = "Apache-2.0"
 website = "https://www.commafeed.com/"
 demo = "https://www.commafeed.com/#/app/category/all"
-admindoc = "https://yunohost.org/packaging_apps"
 code = "https://github.com/Athou/commafeed"
 
 [integration]
